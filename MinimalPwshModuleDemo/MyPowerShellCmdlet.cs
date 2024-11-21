@@ -1,6 +1,6 @@
 ﻿using System.Management.Automation;
 
-namespace csharp_pwsh_module;
+namespace MinimalPwshModuleDemo;
 
 [Cmdlet(VerbsCommon.Get, "Hello")]
 public class MyPowerShellCmdlet : Cmdlet
