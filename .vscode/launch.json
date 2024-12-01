@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+     "configurations": [
+        {
+            "name": "NetStandard module Pwsh CLI",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build netstandard module",
+            "program": "pwsh",
+            "args": [
+                "-NoExit",
+                "-NoProfile",
+                "-Command",
+                "Import-Module ${workspaceFolder}/PwshStandardModule/bin/Debug/netstandard2.0/PwshStandardModule.dll"
+            ],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+        {
+            // NOTE: this task is Windows only
+            "name": "NetStandard module Windows PowerShell CLI",
+            "type": "clr",
+            "request": "launch",
+            "preLaunchTask": "build netstandard module",
+            "program": "powerShell",
+            "args": [
+                "-NoExit",
+                "-NoProfile",
+                "-Command",
+                "Import-Module ${workspaceFolder}/PwshStandardModule/bin/Debug/netstandard2.0/PwshStandardModule.dll"
+            ],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        }
+    ]
+
+}
