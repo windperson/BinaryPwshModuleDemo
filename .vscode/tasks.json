@@ -9,7 +9,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/PwshStandardModule/PwshStandardModule.csproj",
+                "${workspaceFolder}/src/PwshStandardModule/PwshStandardModule.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
