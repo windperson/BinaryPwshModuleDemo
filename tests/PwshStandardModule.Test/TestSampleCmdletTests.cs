@@ -27,6 +27,7 @@ public class TestSampleCmdletTests : IDisposable
     public void ProcessRecord_ShouldWriteFavoriteStuff()
     {
         // Arrange
+        // use PowerShell hosting API to actually run the cmdlet
         using var powershell = PowerShell.Create(_runspace);
         var cmd = new Command("Test-SampleCmdlet");
         cmd.Parameters.Add("FavoriteNumber", 42);
